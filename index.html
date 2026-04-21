@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizzyup — Lote a agenda da sua barbearia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap"
+    rel="stylesheet" />
+    <link rel="shortcut icon" href="image/bizzyup_logo.PNG" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+    <a href="#" class="nav-logo" aria-label="Bizzyup">
+      <img src="image/bizzyup_logo.PNG" alt="Bizzyup" class="nav-logo-img" />
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+    <a href="https://wa.me/5500000000000" class="nav-cta" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path
+          d="M13.6 2.4A7.8 7.8 0 0 0 8 0a7.8 7.8 0 0 0-6.76 11.7L0 16l4.42-1.16A7.8 7.8 0 0 0 8 15.6 7.8 7.8 0 0 0 16 7.8a7.8 7.8 0 0 0-2.4-5.4zM8 14.3a6.5 6.5 0 0 1-3.3-.9l-.24-.14-2.62.69.7-2.56-.16-.26A6.5 6.5 0 0 1 8 1.3a6.5 6.5 0 0 1 6.5 6.5A6.5 6.5 0 0 1 8 14.3zm3.57-4.87c-.2-.1-1.16-.57-1.34-.63-.18-.07-.31-.1-.44.1-.13.19-.5.63-.61.76-.11.13-.23.15-.42.05a5.33 5.33 0 0 1-2.65-2.32c-.2-.35.2-.32.57-1.08.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34H5.3c-.13 0-.34.05-.52.25-.17.2-.68.66-.68 1.6s.7 1.86.8 1.99c.1.13 1.37 2.09 3.33 2.93.46.2.82.32 1.1.41.46.15.88.13 1.21.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.84.11-.92-.05-.1-.18-.14-.38-.24z" />
+      </svg>
+      Falar no WhatsApp
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-mobile-menu" id="mobileMenu" role="menu">
+    <a href="#sobre" role="menuitem">Sobre</a>
+    <a href="#servicos" role="menuitem">Serviços</a>
+    <a href="#como-funciona" role="menuitem">Como Funciona</a>
+    <a href="#contato" role="menuitem">Contato</a>
+    <a href="https://wa.me/5500000000000" class="nav-mobile-cta" target="_blank" rel="noopener" role="menuitem">Falar no
+      WhatsApp</a>
+  </div>
+
+  <!-- ─── HERO ───────────────────────────────── -->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-badge">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M7 1l1.5 3 3.3.5-2.4 2.3.6 3.2L7 8.5 4 10l.6-3.2L2.2 4.5l3.3-.5z" />
+        </svg>
+        Especialistas em barbearias e salões
+      </div>
+
+      <h1 class="hero-title" id="hero-title">
+        Lote a agenda da sua<br>
+        <span class="accent">barbearia</span> com clientes<br>
+        <span class="accent">todos os dias</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A Bizzyup atrai clientes, automatiza seu atendimento e transforma sua barbearia ou salão em uma máquina de
+        crescimento — sem você precisar entender nada de marketing.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/5500000000000" class="btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path
+              d="M13.6 2.4A7.8 7.8 0 0 0 8 0a7.8 7.8 0 0 0-6.76 11.7L0 16l4.42-1.16A7.8 7.8 0 0 0 8 15.6 7.8 7.8 0 0 0 16 7.8a7.8 7.8 0 0 0-2.4-5.4zM8 14.3a6.5 6.5 0 0 1-3.3-.9l-.24-.14-2.62.69.7-2.56-.16-.26A6.5 6.5 0 0 1 8 1.3a6.5 6.5 0 0 1 6.5 6.5A6.5 6.5 0 0 1 8 14.3zm3.57-4.87c-.2-.1-1.16-.57-1.34-.63-.18-.07-.31-.1-.44.1-.13.19-.5.63-.61.76-.11.13-.23.15-.42.05a5.33 5.33 0 0 1-2.65-2.32c-.2-.35.2-.32.57-1.08.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34H5.3c-.13 0-.34.05-.52.25-.17.2-.68.66-.68 1.6s.7 1.86.8 1.99c.1.13 1.37 2.09 3.33 2.93.46.2.82.32 1.1.41.46.15.88.13 1.21.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.84.11-.92-.05-.1-.18-.14-.38-.24z" />
+          </svg>
+          Quero Mais Clientes
+        </a>
+        <a href="#como-funciona" class="btn-ghost">
+          Como funciona
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats" role="list">
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M3 17l4-8 4 4 3-5 3 9" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <div class="hero-stat-label">Mais clientes</div>
+            <div class="hero-stat-sub">Agenda sempre cheia</div>
+          </div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M10 3v3M10 14v3M3 10h3M14 10h3" stroke-linecap="round" />
+              <circle cx="10" cy="10" r="3" />
+            </svg>
+          </div>
+          <div>
+            <div class="hero-stat-label">Automação total</div>
+            <div class="hero-stat-sub">Atendimento 24h</div>
+          </div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <div class="hero-stat-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path
+                d="M7 1l1.5 3 3.3.5-2.4 2.3.6 3.2L7 8.5 4 10l.6-3.2L2.2 4.5l3.3-.5zM13 10l1 2 2.2.3-1.6 1.6.4 2.1-2-1-2 1 .4-2.1-1.6-1.6 2.2-.3z"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <div class="hero-stat-label">Resultados reais</div>
+            <div class="hero-stat-sub">Crescimento garantido</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ──────────────────────────────── -->
+    <section id="sobre" aria-labelledby="sobre-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-left">
+            <p class="section-label">Sobre Nós</p>
+            <h2 class="section-title" id="sobre-title">
+              Crescimento real para quem cuida da <span class="accent">aparência</span>
+            </h2>
+            <p class="section-subtitle">
+              A <strong>Bizzyup</strong> é uma agência de marketing especializada exclusivamente em barbearias e salões
+              de beleza. Nós entendemos os desafios do seu negócio e criamos estratégias que realmente funcionam para
+              lotar sua agenda.
+            </p>
+            <p class="section-subtitle" style="margin-top: 16px;">
+              Enquanto você foca no que faz de melhor — transformar a aparência dos seus clientes — nós cuidamos de
+              trazer novos clientes até você, todos os dias.
+            </p>
+          </div>
+
+          <div class="about-cards" role="list">
+            <div class="about-card reveal" role="listitem">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M10 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM5 17a6 6 0 0 1 10 0" stroke-linecap="round" />
+                  <path d="M17 10a3 3 0 1 0 0-6" />
+                  <path d="M19 17a5 5 0 0 0-4-4.9" stroke-linecap="round" />
+                </svg>
+              </div>
+              <div>
+                <p class="about-card-title">Cadeiras vazias</p>
+                <p class="about-card-desc">Muitos barbeiros perdem dinheiro com horários ociosos porque não têm um fluxo
+                  constante de novos clientes.</p>
+              </div>
+            </div>
+
+            <div class="about-card reveal reveal-delay-1" role="listitem">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <path d="M3 17V7l4-4 4 4v10M11 17V11h6v6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <p class="about-card-title">Fluxo inconsistente</p>
+                <p class="about-card-desc">Sem uma estratégia de marketing, o movimento varia muito de semana para
+                  semana, tornando o faturamento imprevisível.</p>
+              </div>
+            </div>
+
+            <div class="about-card reveal reveal-delay-2" role="listitem">
+              <div class="about-card-icon">
+                <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                  <circle cx="10" cy="10" r="7" />
+                  <circle cx="10" cy="10" r="3" />
+                  <circle cx="10" cy="10" r="0.5" fill="currentColor" />
+                </svg>
+              </div>
+              <div>
+                <p class="about-card-title">Falta de marketing</p>
+                <p class="about-card-desc">A maioria dos donos de barbearia e salão não sabe como usar o marketing
+                  digital para atrair e fidelizar clientes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MISSION ────────────────────────────── -->
+    <section id="missao" aria-labelledby="missao-title">
+      <div class="container">
+        <div class="mission-header">
+          <p class="section-label centered">Nossa Missão</p>
+          <h2 class="section-title centered" id="missao-title">
+            Transformar barbearias e salões<br>em <span class="accent">negócios lucrativos</span>
+          </h2>
+          <p class="mission-body">
+            Acreditamos que todo barbeiro e profissional de beleza merece ter uma agenda cheia e um negócio próspero.
+            Nossa missão é tornar isso realidade através de marketing inteligente e automação.
+          </p>
+        </div>
+
+        <div class="mission-grid" role="list">
+          <article class="mission-card reveal" role="listitem">
+            <div class="mission-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mission-card-title">Crescimento</h3>
+            <p class="mission-card-desc">Impulsionar o crescimento de barbearias e salões com estratégias comprovadas.
+            </p>
+          </article>
+
+          <article class="mission-card reveal reveal-delay-1" role="listitem">
+            <div class="mission-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="mission-card-title">Tecnologia</h3>
+            <p class="mission-card-desc">Levar o poder do marketing digital e da automação para negócios locais.</p>
+          </article>
+
+          <article class="mission-card reveal reveal-delay-2" role="listitem">
+            <div class="mission-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M9 18l-5-5 5-5M15 6l5 5-5 5" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="13" r="2" />
+              </svg>
+            </div>
+            <h3 class="mission-card-title">Visibilidade</h3>
+            <p class="mission-card-desc">Aumentar a presença online e o reconhecimento da marca dos nossos clientes.</p>
+          </article>
+
+          <article class="mission-card reveal reveal-delay-3" role="listitem">
+            <div class="mission-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="mission-card-title">Simplicidade</h3>
+            <p class="mission-card-desc">Simplificar todo o processo para que você foque apenas no seu trabalho.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SERVICES ───────────────────────────── -->
+    <section id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <div class="services-header">
+          <p class="section-label centered">Serviços</p>
+          <h2 class="section-title centered" id="servicos-title">
+            Tudo que você precisa para <span class="accent">crescer</span>
+          </h2>
+          <p class="section-subtitle centered" style="margin-top: 16px;">
+            Soluções completas de marketing e automação criadas especificamente para o mercado de barbearias e salões de
+            beleza.
+          </p>
+        </div>
+
+        <div class="services-grid" role="list">
+          <article class="service-card reveal" role="listitem">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M2 11h3l3-8 4 16 3-8 3 8 3-8" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Marketing para Barbearias</h3>
+            <p class="service-card-desc">Campanhas estratégicas nas redes sociais e Google para atrair clientes
+              qualificados diretamente para sua barbearia ou salão.</p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path d="M11 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke-linecap="round" />
+                <path d="M5 20v-1a6 6 0 0 1 12 0v1M18 6l3 3-3 3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Captação de Clientes</h3>
+            <p class="service-card-desc">Estratégias comprovadas de aquisição de clientes que mantêm sua agenda lotada e
+              seu faturamento previsível.</p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <rect x="3" y="11" width="4" height="8" rx="1" />
+                <rect x="9" y="7" width="4" height="12" rx="1" />
+                <rect x="15" y="3" width="4" height="16" rx="1" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Automação com IA</h3>
+            <p class="service-card-desc">Automatize agendamentos, confirmações e lembretes com inteligência artificial,
+              funcionando 24 horas por dia.</p>
+          </article>
+        </div>
+
+        <div class="services-grid-bottom" role="list">
+          <article class="service-card reveal reveal-delay-1" role="listitem">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <path
+                  d="M17.6 2.4A9.8 9.8 0 0 0 11 0a9.8 9.8 0 0 0-8.5 14.7L1 19l4.4-1.2A9.8 9.8 0 0 0 11 19.6 9.8 9.8 0 0 0 21 10 9.8 9.8 0 0 0 17.6 2.4z"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Automação no WhatsApp</h3>
+            <p class="service-card-desc">Atendimento automatizado via WhatsApp para responder clientes, confirmar
+              horários e reduzir faltas.</p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2" role="listitem">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                <circle cx="11" cy="11" r="3" />
+                <circle cx="11" cy="11" r="8" stroke-dasharray="4 2" />
+                <path d="M11 3V1M11 21v-2M3 11H1M21 11h-2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3 class="service-card-title">Presença Online</h3>
+            <p class="service-card-desc">Posicionamento profissional nas redes sociais e no Google para que sua
+              barbearia seja encontrada e reconhecida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── HOW IT WORKS ───────────────────────── -->
+    <section id="como-funciona" aria-labelledby="como-funciona-title">
+      <div class="container">
+        <div class="how-header">
+          <p class="section-label centered">Como Funciona</p>
+          <h2 class="section-title centered" id="como-funciona-title">
+            Simples, rápido e <span class="accent">eficiente</span>
+          </h2>
+          <p class="section-subtitle centered" style="margin-top: 16px;">
+            Em poucos passos, transformamos sua barbearia ou salão em um negócio com agenda cheia e crescimento
+            constante.
+          </p>
+        </div>
+
+        <div class="steps-grid" role="list">
+          <article class="step-card reveal" role="listitem">
+            <div class="step-header">
+              <div class="step-icon">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="10" cy="10" r="7" />
+                  <path d="M15.5 15.5l4 4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="step-number">01</span>
+            </div>
+            <h3 class="step-title">Diagnóstico do Negócio</h3>
+            <p class="step-desc">Analisamos sua barbearia ou salão, entendemos seus desafios e identificamos as melhores
+              oportunidades de crescimento.</p>
+          </article>
+
+          <article class="step-card reveal reveal-delay-1" role="listitem">
+            <div class="step-header">
+              <div class="step-icon">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M12 2l-1.5 4.5-4.5 1.5 4.5 1.5L12 14l1.5-4.5 4.5-1.5-4.5-1.5z" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5 16l-1 3 3-1" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="step-number">02</span>
+            </div>
+            <h3 class="step-title">Estratégia Personalizada</h3>
+            <p class="step-desc">Criamos um plano de marketing sob medida para o seu negócio, com foco em atrair
+              clientes da sua região.</p>
+          </article>
+
+          <article class="step-card reveal reveal-delay-2" role="listitem">
+            <div class="step-header">
+              <div class="step-icon">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="M11 7v4l3 3" stroke-linecap="round" />
+                  <path d="M7 11a4 4 0 0 1 4-4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <span class="step-number">03</span>
+            </div>
+            <h3 class="step-title">Implementação das Automações</h3>
+            <p class="step-desc">Configuramos todas as automações de atendimento, agendamento e marketing para funcionar
+              no piloto automático.</p>
+          </article>
+
+          <article class="step-card reveal reveal-delay-3" role="listitem">
+            <div class="step-header">
+              <div class="step-icon">
+                <svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 17l4-6 4 3 4-7 4 10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <span class="step-number">04</span>
+            </div>
+            <h3 class="step-title">Crescimento e Otimização</h3>
+            <p class="step-desc">Acompanhamos os resultados e otimizamos continuamente para maximizar seu retorno e
+              crescimento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ────────────────────────────────── -->
+    <section id="contato" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="cta-title" id="cta-title">Pronto para lotar sua agenda?</h2>
+          <p class="cta-sub">
+            Solicite um diagnóstico gratuito e descubra como a Bizzyup pode transformar sua barbearia ou salão em uma
+            máquina de crescimento.
+          </p>
+          <a href="https://wa.me/5500000000000" class="btn-cta-white" target="_blank" rel="noopener">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path
+                d="M13.6 2.4A7.8 7.8 0 0 0 8 0a7.8 7.8 0 0 0-6.76 11.7L0 16l4.42-1.16A7.8 7.8 0 0 0 8 15.6 7.8 7.8 0 0 0 16 7.8a7.8 7.8 0 0 0-2.4-5.4zM8 14.3a6.5 6.5 0 0 1-3.3-.9l-.24-.14-2.62.69.7-2.56-.16-.26A6.5 6.5 0 0 1 8 1.3a6.5 6.5 0 0 1 6.5 6.5A6.5 6.5 0 0 1 8 14.3zm3.57-4.87c-.2-.1-1.16-.57-1.34-.63-.18-.07-.31-.1-.44.1-.13.19-.5.63-.61.76-.11.13-.23.15-.42.05a5.33 5.33 0 0 1-2.65-2.32c-.2-.35.2-.32.57-1.08.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34H5.3c-.13 0-.34.05-.52.25-.17.2-.68.66-.68 1.6s.7 1.86.8 1.99c.1.13 1.37 2.09 3.33 2.93.46.2.82.32 1.1.41.46.15.88.13 1.21.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.84.11-.92-.05-.1-.18-.14-.38-.24z" />
+            </svg>
+            Solicitar Diagnóstico Gratuito
+          </a>
+          <div class="cta-trust" role="note">
+            <span>Sem compromisso</span>
+            <span class="cta-trust-dot" aria-hidden="true"></span>
+            <span>Resposta em até 24h</span>
+            <span class="cta-trust-dot" aria-hidden="true"></span>
+            <span>100% gratuito</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#" class="footer-logo" aria-label="Bizzyup">
+        <img src="image/bizzyup-logo-footer.png" alt="Bizzyup" class="footer-logo-img" />
+      </a>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/bizzyup.agency/" class="footer-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/5500000000000" class="footer-social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+            <path d="M13.6 2.4A7.8 7.8 0 0 0 8 0a7.8 7.8 0 0 0-6.76 11.7L0 16l4.42-1.16A7.8 7.8 0 0 0 8 15.6 7.8 7.8 0 0 0 16 7.8a7.8 7.8 0 0 0-2.4-5.4zM8 14.3a6.5 6.5 0 0 1-3.3-.9l-.24-.14-2.62.69.7-2.56-.16-.26A6.5 6.5 0 0 1 8 1.3a6.5 6.5 0 0 1 6.5 6.5A6.5 6.5 0 0 1 8 14.3zm3.57-4.87c-.2-.1-1.16-.57-1.34-.63-.18-.07-.31-.1-.44.1-.13.19-.5.63-.61.76-.11.13-.23.15-.42.05a5.33 5.33 0 0 1-2.65-2.32c-.2-.35.2-.32.57-1.08.06-.13.03-.25-.02-.35-.05-.1-.44-1.06-.6-1.45-.16-.38-.32-.33-.44-.34H5.3c-.13 0-.34.05-.52.25-.17.2-.68.66-.68 1.6s.7 1.86.8 1.99c.1.13 1.37 2.09 3.33 2.93.46.2.82.32 1.1.41.46.15.88.13 1.21.08.37-.06 1.14-.47 1.3-.92.16-.45.16-.84.11-.92-.05-.1-.18-.14-.38-.24z"/>
+          </svg>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Bizzyup. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
