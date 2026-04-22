@@ -385,21 +385,28 @@ body {
 }
 
 .hero-stat-icon {
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.9);
-    border: 1px solid var(--border);
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(59, 130, 246, 0.15));
+    border: 1px solid rgba(37, 99, 235, 0.18);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-stat:hover .hero-stat-icon {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.18);
 }
 
 .hero-stat-icon svg {
-    width: 18px;
-    height: 18px;
+    width: 20px;
+    height: 20px;
     color: var(--blue);
+    filter: drop-shadow(0 1px 2px rgba(37, 99, 235, 0.2));
 }
 
 .hero-stat-label {
@@ -513,20 +520,29 @@ section {
 }
 
 .about-card-icon {
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     flex-shrink: 0;
-    background: var(--blue-light);
+    background: linear-gradient(135deg, #EFF6FF, #DBEAFE);
+    border: 1px solid rgba(37, 99, 235, 0.1);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.about-card:hover .about-card-icon {
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 4px 18px rgba(37, 99, 235, 0.2);
+    background: linear-gradient(135deg, #DBEAFE, #BFDBFE);
 }
 
 .about-card-icon svg {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     color: var(--blue);
+    filter: drop-shadow(0 1px 2px rgba(37, 99, 235, 0.15));
 }
 
 .about-card-title {
@@ -584,20 +600,34 @@ section {
 }
 
 .mission-card-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--blue-light);
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(145deg, #EFF6FF 0%, #DBEAFE 50%, rgba(59, 130, 246, 0.15) 100%);
+    border: 1px solid rgba(37, 99, 235, 0.1);
     border-radius: var(--radius-lg);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.mission-card:hover .mission-card-icon {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.22);
+    background: linear-gradient(145deg, #DBEAFE 0%, #BFDBFE 50%, rgba(59, 130, 246, 0.25) 100%);
 }
 
 .mission-card-icon svg {
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     color: var(--blue);
+    filter: drop-shadow(0 2px 3px rgba(37, 99, 235, 0.2));
+    transition: transform 0.3s ease;
+}
+
+.mission-card:hover .mission-card-icon svg {
+    transform: scale(1.05);
 }
 
 .mission-card-title {
@@ -670,20 +700,34 @@ section {
 }
 
 .service-card-icon {
-    width: 52px;
-    height: 52px;
-    background: var(--blue-light);
+    width: 54px;
+    height: 54px;
+    background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 60%, rgba(59, 130, 246, 0.18) 100%);
+    border: 1px solid rgba(37, 99, 235, 0.08);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+}
+
+.service-card:hover .service-card-icon {
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.2);
+    background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 60%, rgba(59, 130, 246, 0.25) 100%);
 }
 
 .service-card-icon svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     color: var(--blue);
+    filter: drop-shadow(0 1px 3px rgba(37, 99, 235, 0.18));
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-card-icon svg {
+    transform: scale(1.06);
 }
 
 .service-card-title {
@@ -750,21 +794,33 @@ section {
 }
 
 .step-icon {
-    width: 52px;
-    height: 52px;
+    width: 54px;
+    height: 54px;
     flex-shrink: 0;
-    background: var(--blue);
+    background: linear-gradient(145deg, #3B82F6, #2563EB, #1D4ED8);
     border-radius: var(--radius-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.35), 0 1px 3px rgba(37, 99, 235, 0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.step-card:hover .step-icon {
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 8px 28px rgba(37, 99, 235, 0.45), 0 2px 6px rgba(37, 99, 235, 0.2);
 }
 
 .step-icon svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     color: #fff;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s ease;
+}
+
+.step-card:hover .step-icon svg {
+    transform: scale(1.08);
 }
 
 .step-number {
@@ -924,26 +980,32 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(37, 99, 235, 0.15);
     color: var(--text-muted);
     text-decoration: none;
-    transition: color 0.2s, border-color 0.2s, background 0.2s, transform 0.2s;
+    transition: color 0.3s, border-color 0.3s, background 0.3s, transform 0.3s, box-shadow 0.3s;
     background: transparent;
 }
 
 .footer-social-link:hover {
-    color: var(--blue);
+    color: #fff;
     border-color: var(--blue);
-    background: var(--blue-light);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, #3B82F6, #2563EB);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
 }
 
 .footer-social-link svg {
-    width: 18px;
-    height: 18px;
+    width: 19px;
+    height: 19px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-link:hover svg {
+    transform: scale(1.1);
 }
 
 .footer-copy {
